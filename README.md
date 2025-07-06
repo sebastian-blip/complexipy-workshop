@@ -82,8 +82,6 @@ If you're experienced with Python:
 **Focus on:**
 - Deep diving into the refactored implementations
 - Understanding the design patterns used
-- Extending the modules with new features
-- Contributing to complexity analysis tooling
 
 ## 🚀 Getting Started
 
@@ -93,47 +91,19 @@ If you're experienced with Python:
 - **pip** or **uv** (package manager)
 - **Git** (for cloning and version control)
 
-### Installation
-
-1. **Clone the repository:**
-```bash
-git clone <repository-url>
-cd pycon-complexipy/workshop
-```
-
-2. **Install dependencies:**
-
-Using pip:
-```bash
-pip install -e .
-```
-
-Using uv (recommended):
-```bash
-uv sync
-```
-
 ## 🧪 Running Tests
 
 Both modules include comprehensive test suites. Here's how to run them:
 
 ### Option 1: Run All Tests
 ```bash
-# Using pytest (works for both modules)
 pytest
-
-# Or using Python's unittest discovery
-python -m pytest
 ```
 
 ### Option 2: Run Individual Module Tests
 
 **Password Validator Tests:**
 ```bash
-# Using unittest (original testing framework)
-python -m unittest password_validator.tests.test_password_validator
-
-# Or using pytest
 pytest password_validator/tests/
 ```
 
@@ -141,20 +111,6 @@ pytest password_validator/tests/
 ```bash
 # Using pytest (preferred for this module)
 pytest text_analyzer/tests/
-
-# Or direct pytest run
-python -m pytest text_analyzer/tests/test_text_analyzer.py
-```
-
-### Option 3: Run Tests with Coverage
-```bash
-# Install coverage first
-pip install coverage
-
-# Run with coverage
-coverage run -m pytest
-coverage report
-coverage html  # Creates htmlcov/index.html for detailed report
 ```
 
 ### Understanding Test Output
@@ -165,9 +121,8 @@ coverage html  # Creates htmlcov/index.html for detailed report
 
 ### Common Test Issues for Beginners
 
-1. **ModuleNotFoundError:** Make sure you've installed the package with `pip install -e .`
-2. **Import errors:** Ensure you're running tests from the workshop directory
-3. **Missing dependencies:** Run `pip install pytest` if using pytest directly
+1. **Import errors:** Ensure you're running tests from the workshop directory
+2. **Missing dependencies:** Run `pip install pytest` if using pytest directly
 
 ## 🔧 Workshop Activities
 
