@@ -7,6 +7,6 @@ jobs:
         steps:
         - uses: actions/checkout@v4
         - name: complexity
-          uses: rohaquinlop/complexity-action@v3
+          uses: rohaquinlop/complexipy-action@v3
           with:
             paths: .
